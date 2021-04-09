@@ -105,8 +105,8 @@
   .event-card__nav {
     margin-top: 2rem;
   /*   display: flex; */
-    justify-content: space-evenly;
-    align-items: center;
+    /* justify-content: space-evenly;
+    align-items: center; */
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
