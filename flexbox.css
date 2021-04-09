@@ -1,0 +1,38 @@
+.flex {
+    max-width: 95vw;
+    margin: 0 auto;
+  }
+
+  .event-card {
+    margin-bottom: 2rem;
+  }
+
+  @media (min-width: 450px) {
+    .flex {
+      display: flex; /* No support on IE9. Safari 6 and IE 10 require a prefix but don't have other properties, like flex direction, so the layout could present overflow issues. */
+      /* Android 4.4 supports flex but it is unclear if it supports flex-direction. I added flex-direction and the webkit prefix for flex-direction in the case that flex-direction does work.
+      overflow-x: scroll;
+      flex-direction: column;
+      -webkit-flex-direction: column; */
+      /* Gold support, Safari 7+, Android 5+. Will cancel out the above columns. */
+      flex-flow: row wrap;
+      text-align: center; /* Fixes centering issue for non-flex support. */
+    }
+
+    .event-card {
+      /* Add in some additional breakpoints here to account for mobile views where pixels are calculated differently */
+      width: 20rem; /* For cases where flex/flex-basis will not work */
+      flex-basis: 20rem; /* Unsupported by IE9, Safari 6.1, Android 4.4 support unclear */
+      display: inline-block;
+      text-align: left; /* Maintains centering of cards without centering text content for non-flex support. */
+      padding-bottom: 0rem;
+    }
+  }
+
+  /* What if it's a widescreen display?? */
+
+  @media (min-width: 1350px) {
+    .flex {
+      max-width: 1300px; /* 20rem * 16 = 320px. 320px * 4 = 1280. Layout will have max 4 cards/row. */
+    }
+  }
