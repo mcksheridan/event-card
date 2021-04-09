@@ -1,0 +1,60 @@
+.grid {
+    max-width: 95vw;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .grid-item {
+    margin-bottom: 2rem;
+    text-align: left;
+  }
+
+  /* For larger screens that do not support grid */
+
+  @media (min-width: 41.5rem) {
+    .grid-item {
+      width: 20rem;
+  /*     display: inline-block; */
+    }
+  }
+
+  /* Larger screens that do support grid */
+
+  /* Min widths are established in rems to work in tandem with the 20rem width of each card */
+
+  @media (min-width: 41.5rem) {
+    .grid {
+      min-width: 41rem;
+    }
+    @supports (display: grid) {
+    .grid {
+      display: grid;
+      grid-template-columns: auto auto;
+      }
+    }
+    .grid-item {
+      padding-bottom: 0rem;
+    }
+  }
+
+  @media (min-width: 61.5rem) {
+    .grid {
+      min-width: 61rem;
+      grid-template-columns: auto auto auto;
+    }
+  }
+
+  @media (min-width: 81.5rem) {
+    .grid {
+      min-width: 81rem;
+      grid-template-columns: auto auto auto auto;
+    }
+  }
+
+  /* What if it's a widescreen display?? */
+
+  @media (min-width: 85rem) {
+    .grid {
+      max-width: 83rem;
+    }
+  }
