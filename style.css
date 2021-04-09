@@ -1,0 +1,141 @@
+/* 4/5 update: Hard code variable numbers above references to variables, for support in older browsers. */
+
+:root {
+    --event-card-width: 100%;
+    --event-card__image-width: 37.5rem;
+    --event-card-radius: 5vw;
+    --event-card-column-size: 18;
+    --event-card__datetime-padding: 0.75rem;
+  }
+
+  .event-card {
+    width: 100%;
+    width: var(--event-card-width);
+    min-width: 16rem; /* Things start to look a bit strange when the card has a width of around 16rem (i.e. 256px), so I added this breakpoint. */
+    max-width: 37.5rem;
+    max-width: var(--event-card__image-width); /* This was originally an 800px breakpoint, but I adjusted it down to 600px because that is the max image width. */
+    padding-bottom: 4rem; /* 4/6: Added this padding to ensure the float at the bottom is still included in the card/card's border radius */
+    margin-left: auto;
+    margin-right: auto;
+    font-family: sans-serif;
+    background-color: #eee;
+    color: #333;
+    border-radius: 5vw;
+    border-radius: var(--event-card-radius);
+  }
+
+  .event-card__header {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+  }
+
+  .event-card__band {
+    order: 2;
+    -webkit-order: 2;
+    padding-left: 5.56%;
+    padding-left: calc(var(--event-card-width) / var(--event-card-column-size));
+    /* In the event that flexbox is not available. The band name will display at the top of the card.
+    If it displays at the top of the card, the rounded corners might leave some of the band name exposed to the background.
+    In the event the background color of the page is not accessible with the text color of the band name,
+    adding this background color ensures that the reader can see the band name. */
+    background-color: #eee;
+  }
+
+  .event-card__image {
+    width: 100%; /* I previously set this as max-width. By setting it as just width, I can also consider how a smaller image might behave. */
+    max-width: 37.5rem;
+    max-width: var(--event-card__image-width);
+    height: auto;
+    border-radius: 5vw 5vw 0% 0%;
+    border-radius: var(--event-card-radius) var(--event-card-radius) 0% 0%;
+  }
+
+  .event-card__datetime {
+    position: relative;
+    margin-left: 5.56%;
+    margin-left: calc(var(--event-card-width) / var(--event-card-column-size));
+    margin-top: -0.75rem;
+    margin-top: calc(var(--event-card__datetime-padding) * -1);
+    margin-bottom: 1.75rem;
+    margin-bottom: calc(1rem + var(--event-card__datetime-padding));
+  }
+
+  .event-card__date {
+    background-color: #fff;
+    border-right: 1px solid #888;
+    border-radius: 5px 0px 0px 5px;
+    padding: 0.75rem;
+    padding: var(--event-card__datetime-padding);
+    font-weight: bold;
+  }
+
+  .event-card__time {
+    background-color: #fff;
+    border-left: 1px solid #888;
+    border-radius: 0px 5px 5px 0px;
+    padding: 0.75rem;
+    padding: var(--event-card__datetime-padding);
+  }
+
+  .event-card__address {
+    padding-left: 2.78%;
+    padding-left: calc((var(--event-card-width) / var(--event-card-column-size)) / 2);
+    font-style: normal;
+  }
+
+  .event-card__address > span {
+    display: block;
+  }
+
+  .event-card__address span:first-child {
+    font-weight: bold;
+  }
+
+  .util-hidden {
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+  }
+
+  .event-card__nav {
+    margin-top: 2rem;
+  /*   display: flex; */
+    justify-content: space-evenly;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    line-height: 4rem;
+  }
+
+  .event-card__details {
+    border-radius: 0% 0% 0% 5vw;
+    border-radius: 0% 0% 0% var(--event-card-radius);
+    float: left;
+    width: 50%;
+    color: #fff;
+    background-color: #666;
+    text-decoration: none;
+  }
+
+  .event-card__tickets {
+    border-radius: 0% 0% 5vw 0%;
+    border-radius: 0% 0% var(--event-card-radius) 0%;
+    float: right;
+    width: 50%;
+    color: #fff;
+    /* If the linear gradient is not available in a browser, this will give it a dark background color instead of just displaying on a */
+    background-color: #4682B4;
+    background: -webkit-linear-gradient(to right, #87CEEB, #4682B4);
+    background: linear-gradient(to right, #87CEEB, #4682B4);
+    text-decoration: none;
+  }
+
+  /* Previously, Details/Tickets was expressed using Flexbox.
+  However, if a browser does not support Flexbox, it will display in a manner that is very difficult for users to see. */
+
