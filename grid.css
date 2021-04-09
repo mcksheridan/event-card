@@ -14,7 +14,7 @@
   @media (min-width: 41.5rem) {
     .grid-item {
       width: 20rem;
-  /*     display: inline-block; */
+      display: inline-block;
     }
   }
 
