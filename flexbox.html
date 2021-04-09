@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=stylesheet type=text/css href="style.css">
+    <link rel=stylesheet type=text/css href="flexbox.css">
+    <title>Sheridan's Event Card: Flexbox Layout</title>
+</head>
+<body>
+
+    <div class="flex">
+
+        <article class="event-card">
+
+            <header class="event-card__header">
+
+              <h2 class="event-card__band">Paramore</h2>
+              <img src="https://source.unsplash.com/hzgs56Ze49s/800x600"
+              alt="Photo of concert taken from behind concertgoers. In focus, a concertgoer holds up a heart with their hands.
+              Other concertgoers have their hands raised." class="event-card__image" />
+              <div class="event-card__datetime">
+                <time class="event-card__date" datetime="2018-07-19">
+                  July 19, 2018
+                </time>
+                <time class="event-card__time" datetime="21:30">
+                  9:30 PM
+                </time>
+              </div>
+            </header>
+
+            <p class="util-hidden">Address:</p>
+
+            <address class="event-card__address">
+              <span>North Island Credit Union Amphitheatre</span>
+              <span>2050 Entertainment Cir</span>
+              <span>Chula Vista, CA 91911</span>
+            </address>
+
+            <footer class="event-card__footer">
+              <nav class="event-card__nav">
+                <a href="#" class="event-card__details" aria-label="Details for Paramore">Details</a>
+                <a href="#" class="event-card__tickets" aria-label="Tickets for Paramore">Tickets</a>
+              </nav>
+            </footer>
+
+          </article>
+
+          <article class="event-card">
+
+            <header class="event-card__header">
+
+              <h2 class="event-card__band">Earth Wind & Fire</h2>
+              <img src="https://source.unsplash.com/NcdG9mK3PBY/800x600"
+              alt="PPhoto of concert taken from behind concertgoers. Concertgoers have their hands raised." class="event-card__image" />
+              <div class="event-card__datetime">
+                <time class="event-card__date" datetime="1981-12-30">
+                    December 30, 1981
+                </time>
+                <time class="event-card__time" datetime="20:00">
+                  8:00 PM
+                </time>
+              </div>
+            </header>
+
+            <p class="util-hidden">Address:</p>
+
+            <address class="event-card__address">
+              <span>Oakland Coliseum</span>
+              <span>7000 Coliseum Way</span>
+              <span>Oakland, CA 94621</span>
+            </address>
+
+            <footer class="event-card__footer">
+              <nav class="event-card__nav">
+                <a href="#" class="event-card__details" aria-label="Details for Your Earth Wind & Fire">Details</a>
+                <a href="#" class="event-card__tickets" aria-label="Tickets for Your Earth Wind & Fire">Tickets</a>
+              </nav>
+            </footer>
+
+          </article>
+
+          <article class="event-card">
+
+            <header class="event-card__header">
+
+                <h2 class="event-card__band">T.M. Revolution</h2>
+                <img src="https://source.unsplash.com/zbUvPw1wUIw/800x600"
+                alt="Photo from behind concertgoers. Some concertgoers have raised hands
+                The venue is full of lights and smoke" class="event-card__image">
+                <div class="event-card__datetime">
+                    <time class="event-card__date" datetime="1999-03-17">March 17, 1999</time>
+                    <time class="event-card__time" datetime="20:30">8:30 PM</time>
+                </div>
+            </header>
+
+            <p class="util-hidden">Address:</p>
+
+            <address class="event-card__address">
+                <span>Tokyo Dome</span>
+                <span>3 Koraku 1-chome</span>
+                <span>Bunkyo, Tokyo</span>
+            </address>
+
+            <footer class="event-card__footer">
+                <nav class="event-card__nav">
+                    <a href="#" class="event-card__details" aria-label="Details for T.M. Revolution">Details</a>
+                    <a href="#" class="event-card__tickets" aria-label="Tickets for T.M. Revolution">Tickets</a>
+                </nav>
+            </footer>
+
+          </article>
+
+          <article class="event-card">
+
+            <header class="event-card__header">
+
+                <h2 class="event-card__band">Coldplay</h2>
+                <img src="https://source.unsplash.com/Fh-Q-xfdh_o/800x600"
+                alt="Photo from behind concertgoers with raised hands.
+                Silhouettes of a band on stage with lights pointed at them" class="event-card__image">
+                <div class="event-card__datetime">
+                  <time class="event-card__date" datetime="2008-06-16">June 16, 2008</time>
+                  <time class="event-card__time" datetime="20:00">8:00 PM</time>
+                </div>
+              </header>
+
+              <p class="util-hidden">Address:</p>
+
+              <address class="event-card__address">
+                <span>Brixton Academy</span>
+                <span>211 Stockwell Rd</span>
+                <span>London SW9 9SL</span>
+              </address>
+
+              <footer class="event-card__footer">
+                <nav class="event-card__nav">
+                  <a href="#" class="event-card__details" aria-label="Details for Coldplay">Details</a>
+                  <a href="#" class="event-card__tickets" aria-label="Tickets for Coldplay">Tickets</a>
+                </nav>
+              </footer>
+
+          </article>
+
+          <article class="event-card">
+
+            <header class="event-card__header">
+
+                <h2 class="event-card__band">ABBA</h2>
+                <img src="https://source.unsplash.com/B70JJrdhGzA/800x600"
+                alt="Photo of DJ on stage standing in front of a neon sign that says Dancing Queen.
+                There is a crowd surrounding the DJ below the stage" class="event-card__image">
+                <div class="event-card__datetime">
+                  <time class="event-card__date" datetime="1979-11-10">November 10, 1979</time>
+                  <time class="event-card__time" datetime="20:30">8:30 PM</time>
+                </div>
+              </header>
+
+              <p class="util-hidden">Address:</p>
+
+              <address class="event-card__address">
+                <span>Wembley Arena</span>
+                <span>Arena Square, Engineers Way</span>
+                <span>London HA9 0AA</span>
+              </address>
+
+              <footer class="event-card__footer">
+                <nav class="event-card__nav">
+                  <a href="#" class="event-card__details" aria-label="Details for ABBA">Details</a>
+                  <a href="#" class="event-card__tickets" aria-label="Tickets for ABBA">Tickets</a>
+                </nav>
+              </footer>
+
+          </article>
+
+          <article class="event-card">
+
+            <header class="event-card__header">
+
+              <h2 class="event-card__band">Paramore</h2>
+              <img src="https://source.unsplash.com/hzgs56Ze49s/800x600"
+              alt="Photo of concert taken from behind concertgoers. In focus, a concertgoer holds up a heart with their hands.
+              Other concertgoers have their hands raised." class="event-card__image" />
+              <div class="event-card__datetime">
+                <time class="event-card__date" datetime="2018-07-19">
+                  July 19, 2018
+                </time>
+                <time class="event-card__time" datetime="21:30">
+                  9:30 PM
+                </time>
+              </div>
+            </header>
+
+            <p class="util-hidden">Address:</p>
+
+            <address class="event-card__address">
+              <span>North Island Credit Union Amphitheatre</span>
+              <span>2050 Entertainment Cir</span>
+              <span>Chula Vista, CA 91911</span>
+            </address>
+
+            <footer class="event-card__footer">
+              <nav class="event-card__nav">
+                <a href="#" class="event-card__details" aria-label="Details for Paramore">Details</a>
+                <a href="#" class="event-card__tickets" aria-label="Tickets for Paramore">Tickets</a>
+              </nav>
+            </footer>
+
+          </article>
+
+          <article class="event-card">
+
+            <header class="event-card__header">
+
+              <h2 class="event-card__band">Earth Wind & Fire</h2>
+              <img src="https://source.unsplash.com/NcdG9mK3PBY/800x600"
+              alt="PPhoto of concert taken from behind concertgoers. Concertgoers have their hands raised." class="event-card__image" />
+              <div class="event-card__datetime">
+                <time class="event-card__date" datetime="1981-12-30">
+                    December 30, 1981
+                </time>
+                <time class="event-card__time" datetime="20:00">
+                  20:00 PM
+                </time>
+              </div>
+            </header>
+
+            <p class="util-hidden">Address:</p>
+
+            <address class="event-card__address">
+              <span>Oakland Coliseum</span>
+              <span>7000 Coliseum Way</span>
+              <span>Oakland, CA 94621</span>
+            </address>
+
+            <footer class="event-card__footer">
+              <nav class="event-card__nav">
+                <a href="#" class="event-card__details" aria-label="Details for Your Earth Wind & Fire">Details</a>
+                <a href="#" class="event-card__tickets" aria-label="Tickets for Your Earth Wind & Fire">Tickets</a>
+              </nav>
+            </footer>
+
+          </article>
+
+          <article class="event-card">
+
+            <header class="event-card__header">
+
+                <h2 class="event-card__band">T.M. Revolution</h2>
+                <img src="https://source.unsplash.com/zbUvPw1wUIw/800x600"
+                alt="Photo from behind concertgoers. Some concertgoers have raised hands
+                The venue is full of lights and smoke" class="event-card__image">
+                <div class="event-card__datetime">
+                    <time class="event-card__date" datetime="1999-03-17">March 17, 1999</time>
+                    <time class="event-card__time" datetime="20:30">8:30 PM</time>
+                </div>
+            </header>
+
+            <p class="util-hidden">Address:</p>
+
+            <address class="event-card__address">
+                <span>Tokyo Dome</span>
+                <span>3 Koraku 1-chome</span>
+                <span>Bunkyo, Tokyo</span>
+            </address>
+
+            <footer class="event-card__footer">
+                <nav class="event-card__nav">
+                    <a href="#" class="event-card__details" aria-label="Details for T.M. Revolution">Details</a>
+                    <a href="#" class="event-card__tickets" aria-label="Tickets for T.M. Revolution">Tickets</a>
+                </nav>
+            </footer>
+
+          </article>
+
+          <article class="event-card">
+
+            <header class="event-card__header">
+
+                <h2 class="event-card__band">Coldplay</h2>
+                <img src="https://source.unsplash.com/Fh-Q-xfdh_o/800x600"
+                alt="Photo from behind concertgoers with raised hands.
+                Silhouettes of a band on stage with lights pointed at them" class="event-card__image">
+                <div class="event-card__datetime">
+                  <time class="event-card__date" datetime="2008-06-16">June 16, 2008</time>
+                  <time class="event-card__time" datetime="20:00">8:00 PM</time>
+                </div>
+              </header>
+
+              <p class="util-hidden">Address:</p>
+
+              <address class="event-card__address">
+                <span>Brixton Academy</span>
+                <span>211 Stockwell Rd</span>
+                <span>London SW9 9SL</span>
+              </address>
+
+              <footer class="event-card__footer">
+                <nav class="event-card__nav">
+                  <a href="#" class="event-card__details" aria-label="Details for Coldplay">Details</a>
+                  <a href="#" class="event-card__tickets" aria-label="Tickets for Coldplay">Tickets</a>
+                </nav>
+              </footer>
+
+          </article>
+
+          <article class="event-card">
+
+            <header class="event-card__header">
+
+                <h2 class="event-card__band">ABBA</h2>
+                <img src="https://source.unsplash.com/B70JJrdhGzA/800x600"
+                alt="Photo of DJ on stage standing in front of a neon sign that says Dancing Queen.
+                There is a crowd surrounding the DJ below the stage" class="event-card__image">
+                <div class="event-card__datetime">
+                  <time class="event-card__date" datetime="1979-11-10">November 10, 1979</time>
+                  <time class="event-card__time" datetime="20:30">8:30 PM</time>
+                </div>
+              </header>
+
+              <p class="util-hidden">Address:</p>
+
+              <address class="event-card__address">
+                <span>Wembley Arena</span>
+                <span>Arena Square, Engineers Way</span>
+                <span>London HA9 0AA</span>
+              </address>
+
+              <footer class="event-card__footer">
+                <nav class="event-card__nav">
+                  <a href="#" class="event-card__details" aria-label="Details for ABBA">Details</a>
+                  <a href="#" class="event-card__tickets" aria-label="Tickets for ABBA">Tickets</a>
+                </nav>
+              </footer>
+
+          </article>
+
+          <article class="event-card">
+
+            <header class="event-card__header">
+
+              <h2 class="event-card__band">Paramore</h2>
+              <img src="https://source.unsplash.com/hzgs56Ze49s/800x600"
+              alt="Photo of concert taken from behind concertgoers. In focus, a concertgoer holds up a heart with their hands.
+              Other concertgoers have their hands raised." class="event-card__image" />
+              <div class="event-card__datetime">
+                <time class="event-card__date" datetime="2018-07-19">
+                  July 19, 2018
+                </time>
+                <time class="event-card__time" datetime="21:30">
+                  9:30 PM
+                </time>
+              </div>
+            </header>
+
+            <p class="util-hidden">Address:</p>
+
+            <address class="event-card__address">
+              <span>North Island Credit Union Amphitheatre</span>
+              <span>2050 Entertainment Cir</span>
+              <span>Chula Vista, CA 91911</span>
+            </address>
+
+            <footer class="event-card__footer">
+              <nav class="event-card__nav">
+                <a href="#" class="event-card__details" aria-label="Details for Paramore">Details</a>
+                <a href="#" class="event-card__tickets" aria-label="Tickets for Paramore">Tickets</a>
+              </nav>
+            </footer>
+
+          </article>
+
+          <article class="event-card">
+
+            <header class="event-card__header">
+
+              <h2 class="event-card__band">Earth Wind & Fire</h2>
+              <img src="https://source.unsplash.com/NcdG9mK3PBY/800x600"
+              alt="PPhoto of concert taken from behind concertgoers. Concertgoers have their hands raised." class="event-card__image" />
+              <div class="event-card__datetime">
+                <time class="event-card__date" datetime="1981-12-30">
+                    December 30, 1981
+                </time>
+                <time class="event-card__time" datetime="20:00">
+                  20:00 PM
+                </time>
+              </div>
+            </header>
+
+            <p class="util-hidden">Address:</p>
+
+            <address class="event-card__address">
+              <span>Oakland Coliseum</span>
+              <span>7000 Coliseum Way</span>
+              <span>Oakland, CA 94621</span>
+            </address>
+
+            <footer class="event-card__footer">
+              <nav class="event-card__nav">
+                <a href="#" class="event-card__details" aria-label="Details for Your Earth Wind & Fire">Details</a>
+                <a href="#" class="event-card__tickets" aria-label="Tickets for Your Earth Wind & Fire">Tickets</a>
+              </nav>
+            </footer>
+
+          </article>
+
+          <article class="event-card">
+
+            <header class="event-card__header">
+
+                <h2 class="event-card__band">T.M. Revolution</h2>
+                <img src="https://source.unsplash.com/zbUvPw1wUIw/800x600"
+                alt="Photo from behind concertgoers. Some concertgoers have raised hands
+                The venue is full of lights and smoke" class="event-card__image">
+                <div class="event-card__datetime">
+                    <time class="event-card__date" datetime="1999-03-17">March 17, 1999</time>
+                    <time class="event-card__time" datetime="20:30">8:30 PM</time>
+                </div>
+            </header>
+
+            <p class="util-hidden">Address:</p>
+
+            <address class="event-card__address">
+                <span>Tokyo Dome</span>
+                <span>3 Koraku 1-chome</span>
+                <span>Bunkyo, Tokyo</span>
+            </address>
+
+            <footer class="event-card__footer">
+                <nav class="event-card__nav">
+                    <a href="#" class="event-card__details" aria-label="Details for T.M. Revolution">Details</a>
+                    <a href="#" class="event-card__tickets" aria-label="Tickets for T.M. Revolution">Tickets</a>
+                </nav>
+            </footer>
+
+          </article>
+
+          <article class="event-card">
+
+            <header class="event-card__header">
+
+                <h2 class="event-card__band">Coldplay</h2>
+                <img src="https://source.unsplash.com/Fh-Q-xfdh_o/800x600"
+                alt="Photo from behind concertgoers with raised hands.
+                Silhouettes of a band on stage with lights pointed at them" class="event-card__image">
+                <div class="event-card__datetime">
+                  <time class="event-card__date" datetime="2008-06-16">June 16, 2008</time>
+                  <time class="event-card__time" datetime="20:00">8:00 PM</time>
+                </div>
+              </header>
+
+              <p class="util-hidden">Address:</p>
+
+              <address class="event-card__address">
+                <span>Brixton Academy</span>
+                <span>211 Stockwell Rd</span>
+                <span>London SW9 9SL</span>
+              </address>
+
+              <footer class="event-card__footer">
+                <nav class="event-card__nav">
+                  <a href="#" class="event-card__details" aria-label="Details for Coldplay">Details</a>
+                  <a href="#" class="event-card__tickets" aria-label="Tickets for Coldplay">Tickets</a>
+                </nav>
+              </footer>
+
+          </article>
+
+          <article class="event-card">
+
+            <header class="event-card__header">
+
+                <h2 class="event-card__band">ABBA</h2>
+                <img src="https://source.unsplash.com/B70JJrdhGzA/800x600"
+                alt="Photo of DJ on stage standing in front of a neon sign that says Dancing Queen.
+                There is a crowd surrounding the DJ below the stage" class="event-card__image">
+                <div class="event-card__datetime">
+                  <time class="event-card__date" datetime="1979-11-10">November 10, 1979</time>
+                  <time class="event-card__time" datetime="20:30">8:30 PM</time>
+                </div>
+              </header>
+
+              <p class="util-hidden">Address:</p>
+
+              <address class="event-card__address">
+                <span>Wembley Arena</span>
+                <span>Arena Square, Engineers Way</span>
+                <span>London HA9 0AA</span>
+              </address>
+
+              <footer class="event-card__footer">
+                <nav class="event-card__nav">
+                  <a href="#" class="event-card__details" aria-label="Details for ABBA">Details</a>
+                  <a href="#" class="event-card__tickets" aria-label="Tickets for ABBA">Tickets</a>
+                </nav>
+              </footer>
+
+          </article>
+    </div>
+
+</body>
+</html>
